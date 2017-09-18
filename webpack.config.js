@@ -61,11 +61,11 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist/"),
     hot: true,
-    port: 8000
+    port: 8080
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'Mocah Bokeh',
+        title: 'Sporta: High-End Sports Therapy',
         filename: './index.html',
         hash: true,
         template: './src/index.html'
@@ -84,4 +84,4 @@ module.exports = {
       })
 
   ]
-}
+};

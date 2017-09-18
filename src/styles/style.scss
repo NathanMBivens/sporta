@@ -1,0 +1,21 @@
+
+$fa-font-path: '~font-awesome/fonts';
+
+
+@import "~font-awesome/scss/font-awesome";
+@import "~animate.css/animate.css";
+@import "./mixins/_SPORTA.scss";
+@import './normalize';
+html {
+  font-family: 'Proxima Nova', 'Helvetica';
+}
+
+
+//****************************//
+// ******* NAVIGATION ********//
+//****************************//
+
+.navigation-bar {
+  background-color: $sportanavy;
+  height: 100px;
+}
