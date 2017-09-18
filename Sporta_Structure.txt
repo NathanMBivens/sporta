@@ -1,0 +1,72 @@
+
+
+* // SPORTA STRUCTURE // *
+
+NOTE:
+I will have each page structured with all detailed React Components.
+I will have UI animation throughout each element as well.
+The form element will be the primary focus, to show employers how each element can work with each other. It will also have some sort of logic behind it to calculate the quote price.
+
+*******************************************
+*****////////// HOME PAGE ///////////******
+*******************************************
+
+
+
+Navigation
+*******************************************
+//
+NOTE: AJAX loading each page would be smooth. Look into that.
+//
+  -Navbar
+    -Title: sporta
+    -Links: About, Therapy, Training, Contact
+
+
+
+Jumbotron Slider
+*******************************************
+  //
+  NOTE: The slider will have dots that align with whatever slide the user is on. They should also be clickable.
+  //
+
+    -4 Slides
+      -1. Here at Sporta we help make you the best version of your athletic self.
+      -2. After our ten years of service, we have received more than 25 awards.
+      -3. We use our patented process: VitalU (button to learn more)
+      -4. We are dedicated to your complete personalization. Nothing cookie cutter.
+
+Jumbotron Doctor Section
+*******************************************
+
+
+    -One Image of Two Doctors
+    -Text: "Under the direction of Will Thompson, Ph. D. and
+            Barry Brown, Ph. D., Sporta has become of the
+            recovery location for the world’s biggest sports stars.
+
+            Those include: Derrick Rose, Curt Schilling, Kyrie
+            Irving, Miguel Hernandez just to name a few of our
+            more than 200 various clients we serve."
+
+
+What Can We Do For You? Process Form
+*******************************************
+  //
+    NOTE: -The form on submit should actually send the quote in some stylized form to the email that's put in. There will be logic when they submit to calculate the quote accurately.
+  //
+
+    -Text at top: "What Can We Do For You?"
+    -Subtext: "Fill out the options below for your custom quote."
+    -Form
+      -Overall Square Form
+        -Progress Bar: should have an indication of how close you are to finishing
+        based off of how far you are in the form.
+        -Form should have six questions:
+          1. What does Sporta have that you need? (Options: Sports Therapy, Sports Training, General Sports Counseling, Sports Strategy, General Curiosity).
+          2. Please describe current condition of athlete. (Leave short description input field).
+          3. Which of these do you wish to receive going through Sporta's VitalU? (Complete restoration of damaged area, able to play status, General strength to damaged area, detailed strategy coaching, mental sports training, record-setting conditioning, healthy eating habits, recovery training, cryogenic healing, meal/strength plan, workout coach, list other)
+          4. How long have you been out from full-time sport activity? Have options: (1 week or less, 2-4 weeks, 1-3 months, 4 months or longer, N/A)
+          5. How quickly do you need to get back into the game?
+          6. What other comments do you need for us to know?
+          7. Enter email (with button afterwards for submission)

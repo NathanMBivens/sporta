@@ -1,2 +1,2 @@
 # sporta
-A corporate sports therapy website.
+A practice sports therapy website.
