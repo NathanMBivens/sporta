@@ -17,5 +17,48 @@ html {
 
 .navigation-bar {
   background-color: $sportanavy;
-  height: 100px;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 10%;
+  cursor: pointer;
+
+}
+
+.navigation-title {
+  font-size: 24px;
+  color: $sportablue;
+  font-weight: 500;
+  font-family: 'Ratio Modern';
+  letter-spacing: 2px;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    color: darken($sportablue, 6%);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0 25px;
+  margin-left: 15px;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.nav-item {
+  margin-right: 1em;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  color: $sportwhite;
+  transition: color .2s ease-in-out;
+  height: 15px;
+
+  &:hover {
+    color: $sportayellow;
+
+  }
 }
