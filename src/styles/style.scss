@@ -62,3 +62,43 @@ html {
 
   }
 }
+
+
+//****************************//
+// ******* SLIDER ********//
+//****************************//
+
+
+.slider {
+  height: 650px;
+  top: 5%;
+
+    .slide {
+      height: inherit;
+      width: 100%;
+      position: fixed;
+    }
+
+    .slide::before {
+      content:close-quote;
+      background: linear-gradient(to bottom, rgba(0,0,0, .5), rgba(0,0,0, .03));
+      height: inherit;
+      position: fixed;
+      width: 100%;
+    }
+
+}
+
+.nextSlide {
+  position: absolute;
+  color: white;
+  right: 5%;
+  top: 45%;
+
+}
+.previousSlide {
+  position: absolute;
+  color: white;
+  left: 5%;
+  top: 45%;
+}
