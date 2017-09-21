@@ -1,4 +1,5 @@
 import React from 'react';
+import 'jquery';
 import SlideOne from './SlideOne';
 import SlideTwo from './SlideTwo';
 import SlideThree from './SlideThree';
@@ -6,7 +7,7 @@ import RightButton from './RightButton';
 import LeftButton from './LeftButton';
 import Dots from './Dots';
 import sliderImages from '../../../sliderImages.json';
-
+import { CSSTransitionGroup } from 'react-transition-group';
 
 export default class Slider extends React.Component {
 
@@ -14,7 +15,8 @@ export default class Slider extends React.Component {
     super(props);
 
     this.state = {
-      slideCount: 1
+      slideCount: 0,
+      slides: ['sporta_cycle.jpeg', 'sporta_boxing.jpeg', 'sporta_track.jpeg']
     };
 
       this.nextSlide = this.nextSlide.bind(this);
@@ -23,31 +25,33 @@ export default class Slider extends React.Component {
 
 
     nextSlide() {
-      if(this.state.slideCount !==3) {
-      this.setState({slideCount: this.state.slideCount + 1});
-
-    } else {
-      this.setState({slideCount: 1});
-      }
+      var nextSlide = this.state.slideCount + 1 < this.state.slides.length ?
+      this.state.slideCount + 1 : 0;
+      this.setState({slideCount : nextSlide});
     }
 
     previousSlide() {
-      if(this.state.slideCount !== 1) {
-      this.setState({slideCount: this.state.slideCount - 1})
-    } else {
-      this.setState({slideCount: 3});
-    }
+      var previousSlide = this.state.slideCount - 1 < 0 ?
+      this.state.slides.length - 1 : this.state.slideCount - 1;
+      this.setState({slideCount : previousSlide});
   }
 
   render() {
+    var style = {
+      backgroundImage: 'url(' + require('../../../images/'+this.state.slides[this.state.slideCount]) + ')'
+    }
+
     return (
       <div className="slider">
-          {this.state.slideCount === 1 ? <SlideOne /> : null}
-          {this.state.slideCount === 2 ? <SlideTwo /> : null}
-          {this.state.slideCount === 3 ? <SlideThree /> : null}
+      <RightButton nextSlide={this.nextSlide}/>
+      <LeftButton previousSlide={this.previousSlide}/>
+          <CSSTransitionGroup
+            transitionName="enter"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={250}>
+            <div style={style} key={this.state.slideCount}></div>
+          </CSSTransitionGroup>
 
-            <RightButton nextSlide={this.nextSlide}/>
-            <LeftButton previousSlide={this.previousSlide}/>
       </div>
     );
   }

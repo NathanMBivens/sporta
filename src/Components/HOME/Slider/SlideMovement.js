@@ -5,7 +5,7 @@ module.export.movement = () => {
   $(document).ready(function() {
 
     $('.nextSlide').click(function() {
-
+      
     })
   });
 }
