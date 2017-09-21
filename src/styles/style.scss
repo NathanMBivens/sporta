@@ -19,11 +19,13 @@ html {
   background-color: $sportanavy;
   height: 75px;
   width: 100%;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 10px 10%;
   cursor: pointer;
+  z-index: 10;
 
 }
 
@@ -70,18 +72,21 @@ html {
 
 
 .slider {
+  position: absolute;
+
   height: 650px;
-  top: 5%;
+  top: 75px;
 
     .slide {
       height: inherit;
       width: 100%;
       position: fixed;
+      filter: saturate(0%);
     }
 
     .slide::before {
       content:close-quote;
-      background: linear-gradient(to bottom, rgba(0,0,0, .5), rgba(0,0,0, .03));
+      background: linear-gradient(to bottom, rgba(0,0,0, .6), rgba(0,0,0, .03));
       height: inherit;
       position: fixed;
       width: 100%;
@@ -90,15 +95,24 @@ html {
 }
 
 .nextSlide {
-  position: absolute;
-  color: white;
-  right: 5%;
-  top: 45%;
 
-}
-.previousSlide {
-  position: absolute;
+  position: fixed;
   color: white;
+  top: 375px;
+  right: 5%;
+}
+
+.previousSlide {
+  position: fixed;
+  color: white;
+  top: 375px;
   left: 5%;
-  top: 45%;
+}
+
+.fa {
+  transition: transform .1s ease-in-out;
+  &:hover {
+    color: darken($sportwhite, 25%);
+    transform: scale(1.1);
+  }
 }

@@ -5,7 +5,6 @@ import SlideThree from './SlideThree';
 import RightButton from './RightButton';
 import LeftButton from './LeftButton';
 import Dots from './Dots';
-import axios from 'axios';
 import sliderImages from '../../../sliderImages.json';
 
 
@@ -24,12 +23,21 @@ export default class Slider extends React.Component {
 
 
     nextSlide() {
-      this.setState({slideCount: this.state.slideCount + 1})
+      if(this.state.slideCount !==3) {
+      this.setState({slideCount: this.state.slideCount + 1});
+
+    } else {
+      this.setState({slideCount: 1});
+      }
     }
 
     previousSlide() {
+      if(this.state.slideCount !== 1) {
       this.setState({slideCount: this.state.slideCount - 1})
+    } else {
+      this.setState({slideCount: 3});
     }
+  }
 
   render() {
     return (
@@ -37,8 +45,9 @@ export default class Slider extends React.Component {
           {this.state.slideCount === 1 ? <SlideOne /> : null}
           {this.state.slideCount === 2 ? <SlideTwo /> : null}
           {this.state.slideCount === 3 ? <SlideThree /> : null}
-          <RightButton nextSlide={this.nextSlide}/>
-          <LeftButton previousSlide={this.previousSlide}/>
+
+            <RightButton nextSlide={this.nextSlide}/>
+            <LeftButton previousSlide={this.previousSlide}/>
       </div>
     );
   }

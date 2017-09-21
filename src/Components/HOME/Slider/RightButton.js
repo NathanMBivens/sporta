@@ -12,11 +12,11 @@ export default class RightButton extends React.Component {
 
   render() {
     return (
-      <div>
+
       <div className="nextSlide" onClick={this.props.nextSlide}>
         <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
       </div>
-      </div>
+
     )
   }
 }
