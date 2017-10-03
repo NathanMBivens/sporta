@@ -43,13 +43,19 @@ export default class Slider extends React.Component {
 
     return (
       <div className="slider">
-      <RightButton nextSlide={this.nextSlide}/>
-      <LeftButton previousSlide={this.previousSlide}/>
+
           <CSSTransitionGroup
-            transitionName="enter"
+            transitionName="carousel"
             transitionEnterTimeout={500}
-            transitionLeaveTimeout={250}>
-            <div style={style} key={this.state.slideCount}></div>
+            transitionLeaveTimeout={500}
+            component="div"
+            className="slide"
+            transitionAppear={true}
+            transitionAppearTimeout={1000}
+            >
+            <div className="slide" style={style} key={this.state.slideCount}></div>
+            <RightButton nextSlide={this.nextSlide}/>
+            <LeftButton previousSlide={this.previousSlide}/>
           </CSSTransitionGroup>
 
       </div>
