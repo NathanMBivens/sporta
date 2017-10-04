@@ -1,8 +1,5 @@
 import React from 'react';
 import 'jquery';
-import SlideOne from './SlideOne';
-import SlideTwo from './SlideTwo';
-import SlideThree from './SlideThree';
 import RightButton from './RightButton';
 import LeftButton from './LeftButton';
 import Dots from './Dots';
@@ -16,6 +13,7 @@ export default class Slider extends React.Component {
 
     this.state = {
       slideCount: 0,
+      slideDirection: "right",
       slides: ['sporta_cycle.jpeg', 'sporta_boxing.jpeg', 'sporta_track.jpeg']
     };
 
@@ -26,14 +24,17 @@ export default class Slider extends React.Component {
 
     nextSlide() {
       var nextSlide = this.state.slideCount + 1 < this.state.slides.length ?
-      this.state.slideCount + 1 : 0;
+      this.state.slideCount + 1  : 0;
       this.setState({slideCount : nextSlide});
+      this.setState({slideDirection: "right"});
+
     }
 
     previousSlide() {
       var previousSlide = this.state.slideCount - 1 < 0 ?
       this.state.slides.length - 1 : this.state.slideCount - 1;
       this.setState({slideCount : previousSlide});
+      this.setState({slideDirection: "left"});
   }
 
   render() {
@@ -45,7 +46,7 @@ export default class Slider extends React.Component {
       <div className="slider">
 
           <CSSTransitionGroup
-            transitionName="carousel"
+            transitionName={this.state.slideDirection === "right" ? 'carousel' : 'reverse-carousel'}
             transitionEnterTimeout={500}
             transitionLeaveTimeout={500}
             component="div"
@@ -53,9 +54,10 @@ export default class Slider extends React.Component {
             transitionAppear={true}
             transitionAppearTimeout={1000}
             >
-            <div className="slide" style={style} key={this.state.slideCount}></div>
+            <div className="slide" data-slide={this.state.right} style={style} key={this.state.slideCount}></div>
             <RightButton nextSlide={this.nextSlide}/>
             <LeftButton previousSlide={this.previousSlide}/>
+            <Dots amount={this.state.slides.length} current={this.state.slideCount} />
           </CSSTransitionGroup>
 
       </div>
