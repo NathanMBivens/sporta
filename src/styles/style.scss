@@ -10,6 +10,9 @@ html {
   font-family: 'Proxima Nova', 'Helvetica';
 }
 
+body, html {
+  margin: 0;
+}
 
 //****************************//
 // ******* NAVIGATION ********//
@@ -72,13 +75,14 @@ html {
 
 
 .slider {
-  position: absolute;
   height: 650px;
   top: 75px;
+  width: 100vw;
 
     .slide {
       height: inherit;
-      width: 100%;
+      width: 100vw;
+
       position: fixed;
       background-size: cover;
       background-repeat: no-repeat;
@@ -87,11 +91,11 @@ html {
     }
 
     .slide::before {
-      content:close-quote;
+      content: close-quote;
       background: linear-gradient(to bottom, rgba(0,0,0, .6), rgba(0,0,0, .03));
       height: inherit;
       position: fixed;
-      width: 100%;
+      width: 100vw;
     }
 
 }
@@ -100,20 +104,20 @@ html {
 
   position: fixed;
   color: white;
-  top: 375px;
-  right: 5%;
+  top: 350px;
+  right: 5vw;
   z-index: 5;
 }
 
 .previousSlide {
   position: fixed;
   color: white;
-  top: 375px;
-  left: 5%;
+  top: 350px;
+  left: 5vw;
   z-index: 5;
 }
 
-.fa {
+.fa-arrow-right, .fa-arrow-left {
   transition: transform .1s ease-in-out;
   &:hover {
     color: darken($sportwhite, 25%);
@@ -173,7 +177,8 @@ html {
   align-items: flex-end;
   justify-content: center;
   height: inherit;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .dot {
@@ -182,4 +187,181 @@ html {
 
 .dot[name="active"] {
   color: $sportayellow;
+}
+
+
+//****************************//
+// ******* DOCTOR SECTION ********//
+//****************************//
+
+
+.doctor-section {
+  height: 500px;
+  position: relative;
+  background: $sportanavy;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+}
+
+
+
+.doctor-section-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.doctor-greeting {
+  margin-bottom: 2em;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.doctor-image {
+  height: 12em;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 35px;
+  padding: 15px;
+  background-position: center;
+  margin-right: 2em;
+
+}
+
+.doctor-description {
+  width: 30%;
+  margin-left: 2em;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+}
+
+.about-button-section {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 0 10px 0;
+}
+
+.about-button {
+  width: 33%;
+  text-align: center;
+  background: transparent;
+  border-color: white;
+  border-style: solid;
+  padding: 17px;
+  border-radius: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background: $sportwhite;
+    color: $sportanavy;
+  }
+}
+
+
+//****************************//
+// ******* SERVICES SECTION ********//
+//****************************//
+
+.services-section {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-section-container {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.slide-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.services-slide {
+  height: 400px;
+  width: 12em;
+  background: $sportablue;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.arrow-slider-container {
+  height: 250px;
+  position: relative;
+  background: $sportanavy;
+  display: flex;
+  right: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+}
+.arrow-icon {
+  color: $sportanavy;
+  position: absolute;
+  top: -52px;
+  left: 59%;
+}
+
+.arrow-content-container {
+  padding: 45px 15%;
+}
+.arrow-content {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.arrow-paragraph {
+  color: white;
+  font-weight: 300;
+  padding: 0 25px;
+
 }
