@@ -2,13 +2,19 @@ import 'jquery';
 
 module.exports.servicesText = () => {
   $(document).ready(function () {
+
+        $('.arrow-content').text("Sports Therapy");
+        $('.arrow-paragraph').text(
+        "Here at Sporta we help make you the best version of your athletic self. Our dedicated team of sport therapists have over 40 years of combined experience, working with over 25 types of different athletes. When you work with Sporta, you are assigned a personal therapist from start to finish, who custom-fits your therapy to maximize your time with us. We think you'll love it.");
+        
     $('.slide-container').click(function() {
       switch (true) {
         case ($(this).hasClass('sc1')):
+
           $('.arrow-content').text("Sports Therapy");
           $('.arrow-paragraph').text(
           "Here at Sporta we help make you the best version of your athletic self. Our dedicated team of sport therapists have over 40 years of combined experience, working with over 25 types of different athletes. When you work with Sporta, you are assigned a personal therapist from start to finish, who custom-fits your therapy to maximize your time with us. We think you'll love it.");
-          
+
           break;
 
         case ($(this).hasClass('sc2')):
