@@ -1,4 +1,5 @@
 import React from 'react';
+import MobileMenu from './MobileMenu';
 
 export default class Navigation extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export default class Navigation extends React.Component {
             <div className="nav-item">Contact</div>
           </div>
         </div>
+        <MobileMenu />
       </div>
     )
   }

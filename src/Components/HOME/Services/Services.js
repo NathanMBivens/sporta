@@ -30,6 +30,14 @@ export default class Services extends React.Component {
                 <div className="arrow-paragraph"></div>
               </div>
           </div>
+          <div className="mobile-arrow-slider-container ">
+
+              <div className="mobile-arrow-icon-row"></div>
+              <div className="mobile-arrow-content-container">
+                <div className="mobile-arrow-content"></div>
+                <div className="mobile-arrow-paragraph"></div>
+              </div>
+          </div>
       </div>
     )
   }
