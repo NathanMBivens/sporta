@@ -32,23 +32,19 @@ export default class Form extends React.Component {
             <div className="option-button-section">
                 <div className="option-button-group">
                   <input type="checkbox" className="option-button" id="sportsTherapy" value="sportsTherapy"/>
-                  <div className="option-custom"></div>
                   <label htmlFor="sportsTherapy"><span className="checkbox"> Sports Therapy</span></label>
                 </div>
                 <div className="option-button-group">
                   <input type="checkbox" className="option-button" id="sportsTraining" value="sportsTraining"/>
-                  <div className="option-custom"></div>
-                  <label htmlFor="sportsTraining"> Sports Training</label>
+                    <label htmlFor="sportsTraining"><span className="checkbox"> Sports Training</span></label>
                 </div>
                 <div className="option-button-group">
                   <input type="checkbox" className="option-button" id="completeRecovery" value="completeRecovery"/>
-                  <div className="option-custom"></div>
-                  <label htmlFor="completeRecovery"> Complete Recovery</label>
+                    <label htmlFor="completeRecovery"><span className="checkbox"> Complete Recovery </span></label>
                 </div>
                 <div className="option-button-group">
                   <input type="checkbox" className="option-button" id="nutritionPlanning" value="nutritionPlanning"/>
-                  <div className="option-custom"></div>
-                  <label htmlFor="nutritionPlanning"> Nutrition Planning</label>
+                    <label htmlFor="nutritionPlanning"><span className="checkbox"> Nutrition Planning</span></label>
                 </div>
               </div>
 
