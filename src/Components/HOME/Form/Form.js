@@ -53,7 +53,6 @@ export default class Form extends React.Component {
               </div>
 
               <div className="button-group">
-                <button type="button" className="cancel-button"> Cancel</button>
                 <button type="submit" className="submit-button">Submit</button>
               </div>
             </div>

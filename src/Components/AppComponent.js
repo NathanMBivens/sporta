@@ -5,6 +5,9 @@ import Slider from './HOME/Slider/Slider';
 import DoctorSection from './HOME/DoctorSection/DoctorSection';
 import Services from './HOME/Services/Services';
 import Form from './HOME/Form/Form';
+import Footer from './HOME/Navigation/Footer';
+
+
 export default class AppComponent extends React.Component {
   render() {
       return (
@@ -14,6 +17,7 @@ export default class AppComponent extends React.Component {
           <DoctorSection />
           <Services />
           <Form />
+          <Footer />
         </div>
       )
   }
