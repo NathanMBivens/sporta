@@ -59,9 +59,13 @@ module.exports = {
     ]
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: path.join(__dirname, "dist/"),
     hot: true,
-    port: 8080
+    port: 8080,
+    stats: {
+      colors:true
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1,0 +1,72 @@
+
+.sporta-banner {
+  height: 250px;
+  position: relative;
+  background: $sportwhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 95px;
+}
+
+.banner-title {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-right: -7px;
+}
+
+
+// Director Section //
+
+.directors-section {
+  position: relative;
+  height: 700px;
+  background-color: $sportanavy;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top: 95px;
+}
+
+.directors-container {
+  padding: 45px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.directors-title {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 35px;
+}
+
+.directors-row-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.directors-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  height: inherit;
+}
+
+
+
+.director-name {
+  color: white;
+
+}

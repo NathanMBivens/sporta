@@ -5,6 +5,7 @@ $fa-font-path: '~font-awesome/fonts';
 @import "~font-awesome/scss/font-awesome";
 @import "~animate.css/animate.css";
 @import "./mixins/_SPORTA.scss";
+@import './about';
 @import './normalize';
 html {
   font-family: 'Proxima Nova', 'Helvetica';
@@ -16,13 +17,15 @@ body, html {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
 
 *:focus {
   text-decoration: none;
   outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 //****************************//
@@ -75,8 +78,9 @@ a {
 
   &:hover {
     color: $sportayellow;
-
   }
+
+
 }
 
 .mobile-navigation-wrapper {
@@ -581,6 +585,7 @@ input[type="checkbox"] {
   justify-content: space-between;
   flex-direction: row;
   padding: 15px 25px;
+  margin-top: 95px;
 }
 
 .footer-copyright {
