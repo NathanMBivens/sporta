@@ -10,6 +10,3 @@ import {mobileMenu} from './javascript/MobileMenu';
 
 
 ReactDOM.render(<SportaApp />, document.getElementById('app'));
-
-servicesText();
-mobileMenu();

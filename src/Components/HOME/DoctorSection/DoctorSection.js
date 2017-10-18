@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
 
 export default class DoctorSection extends React.Component {
   render() {
@@ -21,7 +23,7 @@ Irving, Miguel Hernandez just to name a few of our
 more than 200 various clients we serve. </p>
           </div>
           <div className="about-button-section">
-          <button className="about-button" href="#about"> Learn About Us </button>
+          <button className="about-button" href="#about"> <Link to="/about">Learn About Us </Link></button>
           </div>
         </div>
       </div>

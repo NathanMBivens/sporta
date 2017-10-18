@@ -1,0 +1,33 @@
+
+
+
+
+
+.system-section {
+  margin-top: 80px;
+
+}
+
+.system-image-text {
+  text-align: center;
+}
+
+.system-image {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.system-image-text {
+  color: white;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: rgba(0, 187, 227, .8);
+  padding: 25px;
+}

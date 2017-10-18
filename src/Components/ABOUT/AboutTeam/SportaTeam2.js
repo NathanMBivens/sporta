@@ -3,7 +3,9 @@ import React from 'react';
 export default class SportaTeam2 extends React.Component {
   render() {
 
-
+    var style = {
+      marginBottom: '55px'
+    }
     var jeremyStyle = {
       backgroundImage: 'url(' + require('../../../images/sporta_trainer_8.jpg') + ')'
     };
@@ -20,7 +22,7 @@ export default class SportaTeam2 extends React.Component {
     };
 
     return (
-      <div className="directors-section-white">
+      <div className="directors-section-white" style={style}>
         <div className="directors-container">
 
           <div className="directors-title-dark">Training & Wellness Team</div>

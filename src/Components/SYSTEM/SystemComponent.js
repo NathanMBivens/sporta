@@ -1,16 +1,13 @@
 import React from 'react';
 import Navigation from '../HOME/Navigation/Navigation';
 import Footer from '../HOME/Navigation/Footer';
-import Banner from './Banner/Banner';
-import SportaDirectors from './AboutTeam/SportaDirectors';
-import SportaTeam from './AboutTeam/SportaTeam';
-import SportaTeam2 from './AboutTeam/SportaTeam2';
-import SportaTeamEnd from './AboutTeam/SportaTeamEnd';
+import Banner from '../ABOUT/Banner/Banner';
 import Form from '../HOME/Form/Form';
+import SystemExplanation from './SystemExplanation';
 import Style from '../../styles/style.scss';
 import {mobileMenu} from '../../javascript/MobileMenu';
 
-export default class About extends React.Component {
+export default class SystemComponent extends React.Component {
 
   componentDidMount() {
     mobileMenu();
@@ -19,10 +16,8 @@ export default class About extends React.Component {
     return (
       <div>
         <Navigation />
-        <Banner title="ABOUT US" photo="sporta_team.jpg" />
-        <SportaDirectors />
-        <SportaTeam />
-        <SportaTeam2 />
+        <Banner title="SPORTA SYSTEM" photo="sporta_city.jpg" />
+        <SystemExplanation />
         <Form />
         <Footer />
       </div>

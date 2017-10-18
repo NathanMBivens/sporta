@@ -91,7 +91,7 @@
 
 .director-image {
   height: 200px;
-  width: 75%;
+  width: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 45px;
@@ -140,4 +140,68 @@
   color: $sportanavy;
   font-weight: 400;
   font-size: 14px;
+}
+
+
+
+
+
+@media (max-width: 968px) {
+
+  .sporta-banner {
+    height: 150px;
+  }
+
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .directors-section{
+    flex-direction: column;
+    height: 1300px;
+
+  }
+
+  .directors-section-white {
+    flex-direction: column;
+    height: 1500px;
+  }
+
+  .directors-title, .directors-title-dark {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+
+  .directors-container {
+    padding: 10px;
+    margin: 0;
+    width: auto;
+  }
+
+  .directors-row-section {
+    flex-direction: column;
+  }
+
+  .directors-row {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .director-image {
+    height: 120px;
+    width: 150px;
+  }
+
+  .director-position {
+      margin-bottom: 10px;
+  }
+
+
+  .footer {
+    margin-top: 25px !important;
+  }
+
+
+
 }
