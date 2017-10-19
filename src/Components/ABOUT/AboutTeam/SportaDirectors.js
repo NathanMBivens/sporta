@@ -5,10 +5,10 @@ export default class SportaDirectors extends React.Component {
 
 
     var doctorStyle = {
-      backgroundImage: 'url(' + require('../../../images/sporta_doctor.jpeg') + ')'
+      backgroundImage: 'url(' + require('../../../images/sporta_doctor.jpg') + ')'
     };
     var trainingStyle = {
-      backgroundImage: 'url(' + require('../../../images/sporta_lincoln.jpeg') + ')'
+      backgroundImage: 'url(' + require('../../../images/sporta_lincoln.jpg') + ')'
     };
     var wellnessStyle = {
       backgroundImage: 'url(' + require('../../../images/sporta_violet.jpg') + ')'

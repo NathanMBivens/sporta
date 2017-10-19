@@ -14,7 +14,7 @@ export default class Slider extends React.Component {
     this.state = {
       slideCount: 0,
       slideDirection: "right",
-      slides: ['sporta_cycle.jpeg', 'sporta_boxing.jpeg', 'sporta_track.jpeg']
+      slides: ['sporta_cycle.jpg', 'sporta_boxing.jpg', 'sporta_track.jpg']
     };
 
       this.nextSlide = this.nextSlide.bind(this);

@@ -5,7 +5,7 @@ export default class SportaTeam extends React.Component {
 
 
     var jamesStyle = {
-      backgroundImage: 'url(' + require('../../../images/sporta_trainer_2.jpeg') + ')'
+      backgroundImage: 'url(' + require('../../../images/sporta_trainer_2.jpg') + ')'
     };
     var sylviaStyle = {
       backgroundImage: 'url(' + require('../../../images/sporta_trainer_3.jpg') + ')'

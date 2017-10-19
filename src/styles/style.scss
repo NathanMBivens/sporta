@@ -341,6 +341,7 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  transition: all .3s ease-in-out;
 }
 
 .services-slide {
@@ -349,7 +350,13 @@ a {
   background: $sportablue;
   margin-bottom: 25px;
   border-radius: 20px;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
+  filter: brightness(.90) saturate(0);
+
+  &:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1) saturate(1);
+  }
 }
 
 .title-container {
@@ -365,6 +372,7 @@ a {
   font-weight: 700;
   letter-spacing: 1px;
   transition: all .3s ease-in-out;
+  text-align: center;
 }
 
 .arrow-slider-container {
@@ -376,16 +384,20 @@ a {
   left: 0;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 .arrow-icon {
   color: $sportanavy;
-  position: absolute;
-  top: -52px;
-  left: 59%;
+  position: relative;
+  top: -130px;
 }
 
 .arrow-content-container {
   padding: 45px 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .arrow-content {
   color: white;
@@ -394,6 +406,7 @@ a {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .arrow-paragraph {

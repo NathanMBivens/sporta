@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 export default class DoctorSection extends React.Component {
   render() {
     var style = {
-      backgroundImage: 'url(' + require('../../../images/sporta_doctor.jpeg') + ')'
+      backgroundImage: 'url(' + require('../../../images/sporta_doctor.jpg') + ')'
     }
     return (
       <div className="doctor-section">
