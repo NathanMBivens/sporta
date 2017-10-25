@@ -342,6 +342,11 @@ a {
   flex-direction: column;
   justify-content: space-around;
   transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &:active {
+    filter: brightness(1.5);
+  }
 }
 
 .services-slide {
@@ -350,14 +355,17 @@ a {
   background: $sportablue;
   margin-bottom: 25px;
   border-radius: 20px;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   filter: brightness(.90) saturate(0);
+
 
   &:hover {
     transform: scale(1.02);
-    filter: brightness(1.1) saturate(1);
   }
+
 }
+
+
 
 .title-container {
   display: flex;
@@ -376,7 +384,7 @@ a {
 }
 
 .arrow-slider-container {
-  height: 250px;
+  height: 350px;
   position: relative;
   background: $sportanavy;
   display: flex;
@@ -389,10 +397,11 @@ a {
 .arrow-icon {
   color: $sportanavy;
   position: relative;
-  top: -130px;
+  bottom: -25px;
 }
 
 .arrow-content-container {
+
   padding: 45px 15%;
   display: flex;
   align-items: center;

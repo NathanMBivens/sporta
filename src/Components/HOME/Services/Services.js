@@ -46,9 +46,11 @@ export default class Services extends React.Component {
             <div className="slide-title"> Nutrition Planning </div>
           </div>
           </div>
+          <div className="arrow-icon-row">
+            <i className="arrow-icon fa fa-caret-up fa-5x" aria-hidden="true"></i>
+          </div>
           <div className="arrow-slider-container ">
-              <i className="arrow-icon fa fa-caret-up fa-5x" aria-hidden="true"></i>
-              <div className="arrow-icon-row"></div>
+
               <div className="arrow-content-container">
                 <div className="arrow-content"></div>
                 <div className="arrow-paragraph"></div>
